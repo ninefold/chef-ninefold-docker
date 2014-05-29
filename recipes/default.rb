@@ -9,4 +9,4 @@
 # Set up a server with docker
 #
 
-include 'docker'
+include_recipe 'docker'

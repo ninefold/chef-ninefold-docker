@@ -13,6 +13,7 @@ default['ninefold_docker']['images'] = [
   { :name => 'dockerfile/elasticsearch' },
   { :name => 'tutum/mysql' },
   { :name => 'dockerfile/redis' },
-  { :name => 'coreos/etcd' },
-  { :name => 'ubuntu' }
+  { :name => 'dockerfile/ubuntu' },
+  { :name => 'dockerfile/nodejs' },
+  { :name => 'dockerfile/mongodb' }
 ]

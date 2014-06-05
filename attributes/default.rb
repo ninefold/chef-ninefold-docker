@@ -16,5 +16,6 @@ default['ninefold_docker']['images'] = [
     :tag  => '5.5'
   },
   { :name => 'dockerfile/redis' },
-  { :name => 'coreos/etcd' }
+  { :name => 'coreos/etcd' },
+  { :name => 'ubuntu' }
 ]

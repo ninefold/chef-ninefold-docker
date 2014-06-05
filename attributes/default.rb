@@ -11,10 +11,7 @@ default['ninefold_docker']['group_members'] = %w(user)
 
 default['ninefold_docker']['images'] = [
   { :name => 'dockerfile/elasticsearch' },
-  {
-    :name => 'tutum/mysql',
-    :tag  => '5.5'
-  },
+  { :name => 'tutum/mysql' },
   { :name => 'dockerfile/redis' },
   { :name => 'coreos/etcd' },
   { :name => 'ubuntu' }

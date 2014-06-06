@@ -14,7 +14,8 @@ default['ninefold_docker']['images'] = [
   { :name => 'tutum/mysql' },
   { :name => 'dockerfile/ubuntu' },
   { :name => 'dockerfile/nodejs' },
-  { :name => 'dockerfile/mongodb' }
+  { :name => 'dockerfile/mongodb' },
+  { :name => 'ubuntu' }
 ]
 
 default['ninefold_docker']['delete_files'] = %w(

@@ -9,6 +9,10 @@
 # Set up a server with docker
 #
 
+include_recipe 'apt'
+
+execute 'apt-get -y dist-upgrade'
+
 # set up users
 node.set['docker']['group_members'] = node['ninefold_docker']['group_members']
 
@@ -25,3 +29,5 @@ node['ninefold_docker']['images'].each do |image|
     action :pull
   end
 end
+
+include_recipe 'ninefold_docker::cleanup'

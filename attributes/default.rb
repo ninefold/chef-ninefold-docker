@@ -16,3 +16,14 @@ default['ninefold_docker']['images'] = [
   { :name => 'dockerfile/nodejs' },
   { :name => 'dockerfile/mongodb' }
 ]
+
+default['ninefold_docker']['delete_files'] = %w(
+  /etc/hostname
+  /home/user/.bash_history
+  /root/.bash_history
+)
+
+default['ninefold_docker']['delete_dirs'] = %w(
+  /etc/chef
+  /var/chef
+)

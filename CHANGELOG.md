@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of ninefold\_app.
 
+## 0.1.2
+
+* Add ubuntu docker image
+
 ## 0.1.1
 
 * Add apt-get dist-upgrade

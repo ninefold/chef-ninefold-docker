@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_attribute 'docker'
+normal['docker']['package']['action'] = 'upgrade'
+
 default['ninefold_docker']['group_members'] = %w(user)
 
 default['ninefold_docker']['images'] = [

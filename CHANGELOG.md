@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of ninefold\_app.
 
+## 0.1.4
+
+* Update apt when installing registry for latest python
+* Install standalone application server as default for registry
+
 ## 0.1.3
 
 * Make update the package the default

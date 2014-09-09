@@ -14,4 +14,4 @@ require 'securerandom'
 
 node.set_unless['docker-registry']['secret_key'] = SecureRandom.hex(32)
 
-include_recipe 'docker-registry'
+include_recipe 'docker-registry::application_server'

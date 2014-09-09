@@ -15,4 +15,6 @@ include_recipe 'apt'
 require 'securerandom'
 node.set_unless['docker-registry']['secret_key'] = SecureRandom.hex(32)
 
+node.set['docker-registry']['revision'] = "0.6.8"
+node.set['docker-registry']['repository'] = "https://github.com/docker/docker-registry.git"
 include_recipe 'docker-registry::application_server'

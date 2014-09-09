@@ -13,3 +13,9 @@ node['ninefold_docker']['delete_dirs'].each do |dir_name|
     action :delete
   end
 end
+
+node['ninefold_docker']['remove_pkgs'].each do |pkg_name|
+  package pkg_name do
+    action :remove
+  end
+end

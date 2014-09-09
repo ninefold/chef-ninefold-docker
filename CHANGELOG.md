@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of ninefold\_app.
 
+## 0.1.5
+
+* Remove chef in clean up recipe
+
 ## 0.1.4
 
 * Update apt when installing registry for latest python

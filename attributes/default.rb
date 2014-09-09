@@ -30,3 +30,7 @@ default['ninefold_docker']['delete_dirs'] = %w(
   /etc/chef
   /var/chef
 )
+
+default['ninefold_docker']['remove_pkgs'] = %w(
+  chef
+)
